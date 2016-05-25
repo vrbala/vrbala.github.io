@@ -1,0 +1,51 @@
+Data source: https://archive.ics.uci.edu/ml/datasets/Wholesale+customers
+
+Project Description
+========================
+
+You’ve been hired by a wholesale grocery distributor to help them determine which changes will benefit their business. They recently tested out a change to their delivery method, from a regular morning delivery to a cheaper, bulk evening delivery. Initial tests didn’t discover any significant effect, so they implemented the cheaper option. Almost immediately, they began getting complaints about the change and losing customers. As it turns out, the highest volume customers had an easy time adapting to the change, whereas smaller family run shops had serious issues with it--but these issues were washed out statistically by noise from the larger customers.
+
+For the future, they want to have a sense of what sorts of different customers they have. Then, when implementing changes, they can look at the effects on these different groups independently. Your task is to use unsupervised techniques to see what sort of patterns exist among existing customers, and what exactly makes them different.
+
+    Component analysis
+
+    Reflection on PCA/ICA
+        What are likely candidates for early PCA dimensions?
+        What might ICA dimensions look like?
+    What proportion of variance is explained by each PCA dimension?
+    PCA dimensions
+        What are the first few components? What might they represent?
+        How can you use this information?
+
+    ICA
+        What are the components that arise?
+        How could you use these components?
+    Clustering
+    Decide on K means clustering or Gaussian mixture methods
+        What are the advantages and disadvantages of each?
+        How will you decide on the number of clusters?
+    Implement clusters
+        Sample central points of the clusters
+
+    Produce a graphic
+        Visualize important dimensions by reducing with PCA
+        Are there clusters that aren’t very well distinguished? How could you improve the visualization?
+    Conclusions
+    Which of these techniques felt like it fit naturally with the data?
+    How would you use that technique to assist if the company conducted an experiment?
+    How would you use that data to predict future customer needs?
+
+
+References:
+
+https://discussions.udacity.com/t/having-trouble-with-pca-and-ica-specifically-with-explaining-what-the-dimensions-mean/41890/15
+
+Especially: comment by mitchell regarding scaling, 
+
+In general it is best to scale data before using PCA. If you aren't going to, you should have a specific reason that a larger scale for one feature corresponds to more variance in a meaningful way.
+
+In this context, we do have that! Because these features are all very much in the same context, it makes sense to assume they are all on the same scale.
+
+However it might also make sense to do feature scaling. For example, if you expect the features to correspond to different fractions of a customer's expenditure, you might care more about their relative variance. This isn't wrong, but we are in one of the rare situations where scaling the features before applying PCA isn't necessary.
+
+===================================================================================================================
