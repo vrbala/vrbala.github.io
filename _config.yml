@@ -1,2 +1,4 @@
 name: Balamurugan V Raman
 markdown: kramdown
+gems:
+  - jekyll-sitemap
