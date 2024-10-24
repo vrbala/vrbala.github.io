@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Raman - Resume</title>
+    <style>
+        :root {
+            --primary-color: #2d3748;
+            --secondary-color: #4a5568;
+            --accent-color: #3182ce;
+            --light-bg: #f7fafc;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+        }
+        
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 1rem;
+        }
+        
+        h1 {
+            color: var(--accent-color);
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            margin: 1rem 0;
+            color: var(--secondary-color);
+        }
+        
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .skills-list li {
+            background-color: var(--light-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+        
+        .job-period {
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        .education-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Balamurugan Veerasamy Raman (Bala Raman)</h1>
+        <div class="contact-info">
+            Hintermayrstr. 32, 90409 Nuernberg, Deutschland<br>
+            📧 <a href="mailto:vrbmails@gmail.com">vrbmails@gmail.com</a> | 
+            🔗 <a href="https://linkedin.com/in/vrbala">LinkedIn</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Senior Software Engineer with 14+ years of experience in building and scaling distributed systems. Proven expertise in API design, data modeling, and team leadership. Strong focus on performance optimization and architectural design. Currently specializing in retail technology solutions and cloud-native architectures.</p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li><strong>Languages:</strong> Java (Expert), Python (Advanced), Go (Intermediate)</li>
+            <li><strong>Databases:</strong> Oracle, PostgreSQL, DynamoDB, Elasticsearch, Vertica, MySQL, InfluxDB</li>
+            <li><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, Terraform, Jenkins</li>
+            <li><strong>Architecture:</strong> Microservices, Event-Driven Architecture, REST APIs, gRPC, OpenAPI</li>
+            <li><strong>Messaging & Monitoring:</strong> Kafka, Kibana, Grafana</li>
+            <li><strong>Additional:</strong> Machine Learning, Computer Vision, Deep Learning (Foundational)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        
+        <div class="experience-item">
+            <h3>Senior Software Engineer II - Backend | adidas AG, Germany</h3>
+            <div class="job-period">August 2018 - Present</div>
+            
+            <h4>Store Experience Services</h4>
+            <ul>
+                <li>Led development of product catalog service deployed across 500+ stores in Europe and Americas</li>
+                <li>Orchestrated zero-downtime migration of article metadata service handling millions of daily queries to event-driven architecture</li>
+                <li>Lead backend engineering team managing 20+ microservices powering retail store consumer experiences</li>
+            </ul>
+
+            <h4>Connection Studio (Solution Architect)</h4>
+            <ul>
+                <li>Architected revamp of internal campaign management system</li>
+                <li>Designed scalable data model supporting hundreds of concurrent campaigns, driving user acquisition</li>
+                <li>Led critical infrastructure migrations including AWS clusters, API gateway, and Azure SSO integration</li>
+            </ul>
+
+            <h4>OneWMS (Solution Architect)</h4>
+            <ul>
+                <li>Designed and implemented inventory data migration tools achieving 100% accuracy during production cutover</li>
+                <li>Led integration of new label printing solution, optimizing operational efficiency and reducing costs</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Senior Software Engineer | Blippar India Pvt. Ltd, Bangalore</h3>
+            <div class="job-period">December 2016 - May 2018</div>
+            <ul>
+                <li>Developed REST services integrating with proprietary Computer Vision engines</li>
+                <li>Enhanced LayAR platform stability through system configuration improvements</li>
+                <li>Led custom solutions team delivering bespoke computer vision applications</li>
+                <li>Conducted research on Deep Learning applications in Computer Vision</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>R&D Engineer II | Dreamworks Animation (Technicolor), Bangalore</h3>
+            <div class="job-period">November 2014 - December 2016</div>
+            <ul>
+                <li>Built render farm job submission and management tools for artists</li>
+                <li>Developed real-time monitoring system components that won Technical Achievement Award</li>
+                <li>Implemented kNN-based watchdog system for identifying runaway jobs, optimizing compute resources</li>
+                <li>Modernized legacy job submission library into production-grade system</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Senior Software Engineer | Manhattan Associates IDC, Bangalore</h3>
+            <div class="job-period">December 2010 - November 2014</div>
+            <ul>
+                <li>Led development team for custom WMS implementation at major sports retailer</li>
+                <li>Optimized message queuing strategy for near real-time performance</li>
+                <li>Conducted Oracle performance analysis and optimization</li>
+                <li>Developed automation tools for code generation and testing</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Master of Science in Software Systems</h3>
+            <p>BITS Pilani, India (2013) | GPA: 9.10/10.0</p>
+        </div>
+        
+        <div class="education-item">
+            <h3>Bachelor of Engineering in Electrical and Electronics</h3>
+            <p>Anna University, India (2009) | Score: 82.78%</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Certifications & Additional Training</h2>
+        <ul>
+            <li>Machine Learning Engineering Nanodegree (Udacity)</li>
+            <li>Machine Learning Certification (Coursera) - 100% grade</li>
+            <li>Projects Portfolio: <a href="https://github.com/vrbala/mlnd">GitHub</a></li>
+        </ul>
+    </section>
+</body>
+</html>
