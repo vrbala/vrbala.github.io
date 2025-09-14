@@ -12,42 +12,42 @@
         
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.4;
+            line-height: 1.2;
             color: var(--primary-color);
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 0.5rem;
-            font-size: 10pt;
+            padding: 0.2rem;
+            font-size: 9pt;
         }
         
         header {
             text-align: center;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.3rem;
             border-bottom: 1px solid var(--accent-color);
         }
         
         h1 {
             color: var(--accent-color);
             margin: 0;
-            font-size: 14pt;
+            font-size: 12pt;
         }
         
         h2 {
             color: var(--accent-color);
             border-bottom: 1px solid #ccc;
-            padding-bottom: 0.2rem;
-            margin: 0.5rem 0;
-            font-size: 11pt;
-        }
-        
-        h3 {
-            margin: 0.3rem 0;
+            padding-bottom: 0.1rem;
+            margin: 0.2rem 0;
             font-size: 10pt;
         }
         
-        .contact-info {
+        h3 {
+            margin: 0.1rem 0;
             font-size: 9pt;
-            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            font-size: 8pt;
+            margin-bottom: 0.2rem;
         }
         
         .contact-info a {
@@ -56,44 +56,119 @@
         }
         
         section {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.2rem;
         }
         
         ul {
-            margin: 0.2rem 0;
-            padding-left: 1.2rem;
+            margin: 0.1rem 0;
+            padding-left: 1rem;
         }
         
         li {
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.1rem;
         }
         
         .job-period {
             font-style: italic;
-            font-size: 9pt;
+            font-size: 8pt;
         }
         
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.3rem;
             list-style: none;
             padding: 0;
-            margin: 0.3rem 0;
+            margin: 0.1rem 0;
         }
         
         .skills-list li {
             background-color: #f4f4f4;
+            padding: 0.1rem 0.3rem;
+            border-radius: 2px;
+            font-size: 8pt;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            width: 100%;
+        }
+        .left-column {
+            flex: 0 0 32%;
+            padding-right: 1rem;
+            border-right: 1px solid #ccc;
+        }
+        .right-column {
+            flex: 1;
+            padding-left: 1rem;
+        }
+
+         .heading-row {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 2.5rem;
+            width: 100%;
+            min-height: 900px;
+        }
+        .left-column {
+            flex: 0 0 32%;
+            padding-right: 2rem;
+            border-right: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+        .right-column {
+            flex: 1;
+            padding-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+        .skills-list li {
+            background-color: #f4f4f4;
             padding: 0.2rem 0.5rem;
-            border-radius: 3px;
-            font-size: 9pt;
+            border-radius: 2px;
+            font-size: 8pt;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: baseline;
+        }
+        .skill-name {
+            min-width: 110px;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+        .skill-sep {
+            margin: 0 0.3em;
+        }
+        .skill-content {
+            font-weight: normal;
+            color: var(--primary-color);
         }
         
         @media print {
             body {
                 max-width: 100%;
                 padding: 0;
-                font-size: 10pt;
+                font-size: 8pt;
+            }
+            h1, h2, h3 {
+                font-size: 8pt !important;
+            }
+            .skills-list li {
+                font-size: 7pt !important;
             }
             a[href]:after {
                 content: none !important;
@@ -102,74 +177,77 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Balamurugan Veerasamy Raman (Bala Raman)</h1>
-        <div>Senior Engineer | Architect | SRE & Product Minded</div>
-        <div class="contact-info">
-            Hintermayrstr. 32, 90409 Nuernberg, Deutschland | 
-            📧 <a href="mailto:vrbmails@gmail.com">vrbmails@gmail.com</a> | 
-            🔗 <a href="https://linkedin.com/in/vrbala">LinkedIn</a>
+        <div class="heading-row">
+            <header>
+                <h1>Balamurugan Veerasamy Raman (Bala Raman)</h1>
+                <div>Senior Engineer | Architect | SRE & Product Minded</div>
+                <div class="contact-info">
+                    Hintermayrstr. 32, 90409 Nuernberg, Deutschland | 📧 <a href="mailto:vrbmails@gmail.com">vrbmails@gmail.com</a> | 🔗 <a href="https://linkedin.com/in/vrbala">LinkedIn</a>
+                </div>
+            </header>
         </div>
-    </header>
-
-    <section>
-        <h2>Professional Summary</h2>
-        <p>Strategic Product Engineer with 15+ years of experience in building and operating large scale web services across many industries. Proven track record in System design, Data Modeling, Site Reliability Engineering, and technical leadership, specializing in cloud-native architectures.</p>
-    </section>
-
-    <section>
-        <h2>Technical Skills</h2>
-        <ul class="skills-list">
-            <li><strong>Languages:</strong> Java, Python, Go and more</li>
-            <li><strong>Databases:</strong> MySQL, PostgreSQL, DynamoDB, Elasticsearch and more</li>
-            <li><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes</li>
-            <li><strong>Architecture:</strong> Microservices, Clean and Event-Driven</li>
-            <li><strong>Messaging:</strong> Kafka, ActiveMQ</li>
-            <li><strong>Observability:</strong> Instana, Runscope</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Professional Experience</h2>
-        
-        <div>
-            <h3>Senior Software Engineer II | adidas AG, Germany</h3>
-            <div class="job-period">August 2018 - Present</div>
-            <ul>
-                <li>Led design and development of product catalog service that is used across 500+ European/Americas adidas stores.</li>
-                <li>Spearheaded the design and implementation of a comprehensive platform-wide decoupling initiative, facilitating a seamless, zero-downtime migration from the legacy ERP system to the new ERP landscape.</li>
-                <li>Initiated SRE practices within the product team, enabling the quick onboarding of a dedicated SRE team later. Demonstrated commitment to system reliability, even in resource-constrained environments.</li>
-                <li>Architected and led transformation of retail technology infrastructure, implementing event-driven microservices architecture that improved system availability and performance with reduced operational complexity.</li>
-                <li>Optimized many core functionalities across different microservices improving response times by upto ~92%.</li>
-                <li>Proactively identified the need for increased focus on a critical product. Negotiated with the engineer and manager to prioritize this effort, leading to improved quality and success.</li>
-            </ul>
+        <div class="container">
+            <div class="left-column">
+                <section>
+                    <h2>Technical Skills</h2>
+                    <ul class="skills-list">
+                        <li><span class="skill-name">Languages</span><span class="skill-sep">:</span> <span class="skill-content">Java, Python, Go and more</span></li>
+                        <li><span class="skill-name">Search Technologies</span><span class="skill-sep">:</span> <span class="skill-content">Elasticsearch, Lucene, Query DSL, Relevance tuning, Faceted search</span></li>
+                        <li><span class="skill-name">Databases</span><span class="skill-sep">:</span> <span class="skill-content">MySQL, PostgreSQL, DynamoDB and more</span></li>
+                        <li><span class="skill-name">Cloud & DevOps</span><span class="skill-sep">:</span> <span class="skill-content">AWS, Jenkins, Docker, Kubernetes</span></li>
+                        <li><span class="skill-name">Architecture</span><span class="skill-sep">:</span> <span class="skill-content">Microservices, Clean and Event-Driven</span></li>
+                        <li><span class="skill-name">Messaging</span><span class="skill-sep">:</span> <span class="skill-content">Kafka, ActiveMQ</span></li>
+                        <li><span class="skill-name">Observability</span><span class="skill-sep">:</span> <span class="skill-content">ELK, Instana, Runscope</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Certifications</h2>
+                    <p>Machine Learning Engineering Nanodegree (Udacity)<br>
+                        Machine Learning Certification (Coursera)<br>
+                        Projects: <a href="https://github.com/vrbala/mlnd">GitHub Portfolio</a></p>
+                </section>
+            </div>
+            <div class="right-column">
+                <section>
+                    <h2>Professional Summary</h2>
+                    <p>Strategic Product Engineer with 15+ years of experience in building and operating large scale web services across many industries. Proven track record in system design, data modeling, site reliability engineering, and technical leadership, specializing in cloud-native architectures. Highly effective in cross-functional collaboration and communication with stakeholders at all levels—upwards, downwards, and peers—to align technical solutions with business goals and drive impactful outcomes.</p>
+                </section>
+                <section>
+                    <h2>Professional Experience</h2>
+                    <div style="margin-bottom:2rem">
+                        <h3>Senior Software Engineer II | adidas AG, Germany</h3>
+                        <div class="job-period">August 2018 - Present</div>
+                        <ul>
+                            <li>Led design and development of product catalog search used across 700+ adidas stores. Designed the document model in Elasticsearch and an indexing strategy optimized for minimal write load. Drove implementation of an Apache Camel-based data indexing pipeline and a Spring Boot-based REST service for end user consumption.</li>
+                            <li>Led cross-functional teams in the design and implementation of a comprehensive platform-wide decoupling initiative, facilitating a seamless, zero-downtime migration from the legacy ERP system to the new ERP landscape.</li>
+                            <li>Initiated SRE practices within the product team, enabling the quick onboarding of a dedicated SRE team later. Demonstrated commitment to system reliability, even in resource-constrained environments.</li>
+                            <li>Architected and led transformation of retail technology infrastructure, implementing event-driven microservices architecture that improved system availability and performance with reduced operational complexity.</li>
+                            <li>Optimized and improved the processing time by ~92% across many core functionalities in Merchandising area.</li>
+                            <li>Proactively identified the need for improving a set of critical services in Merchandising area. Negotiated with the engineer and manager to prioritize this effort, leading to improved quality and success.</li>
+                        </ul>
+                    </div>
+                    <div style="margin-bottom:2rem">
+                        <h3>Senior Software Engineer | Blippar India Pvt. Ltd</h3>
+                        <div class="job-period">December 2016 - May 2018</div>
+                        <ul>
+                            <li>Improved the stability of the computer vision cluster, resulting in a 30% increase in platform availability and significantly enhancing the user experience.</li>
+                            <li>Developed exploratory capabilities leveraging computer vision technology to explore new application frontiers, including adapter services on top of computer vision engines.</li>
+                            <li>Conducted in-depth research into the intricacies of computer vision systems, leading to the development of innovative strategies for integrating legacy and modern methods of triggering custom augmented reality experiences. This involved devising comprehensive plans to co-locate and harmonize both old and new technologies, ensuring seamless and enhanced user interactions.</li>
+                        </ul>
+                    </div>
+                    <div style="margin-bottom:2rem">
+                        <h3>R&D Engineer II | Dreamworks Animation</h3>
+                        <div class="job-period">November 2014 - December 2016</div>
+                        <ul>
+                            <li>Built and operated data ingesion pipelines and analytics dashboards in close collaboration with data analysts.</li>
+                            <li>Developed real-time monitoring system that helped render wranglers run the renderfarm effectively, winning Technical Achievement Award.</li>
+                            <li>Implemented kNN-based watchdog system for detecting straggler jobs in the render farm and optimizing resource utilization.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
         </div>
+       
 
-        <div>
-            <h3>Senior Software Engineer | Blippar India Pvt. Ltd</h3>
-            <div class="job-period">December 2016 - May 2018</div>
-            <ul>
-                <li>Developed prototype use cases leveraging computer vision technology to explore new application frontiers, including adapter services on top of computer vision engines.</li>
-                <li>Improved the stability of the computer vision cluster, resulting in a 30% increase in platform availability and significantly enhancing the user experience.</li>
-                <li>Conducted in-depth research into the intricacies of computer vision systems, leading to the development of innovative strategies for integrating legacy and modern methods of triggering custom augmented reality experiences. This involved devising comprehensive plans to co-locate and harmonize both old and new technologies, ensuring seamless and enhanced user interactions.</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>R&D Engineer II | Dreamworks Animation</h3>
-            <div class="job-period">November 2014 - December 2016</div>
-            <ul>
-                <li>Developed data ingesion pipelines and analytics dashboards in close collaboration with data analysts.</li>
-                <li>Developed real-time monitoring system that helped render wranglers run the renderfarm effectively, winning Technical Achievement Award.</li>
-                <li>Implemented kNN-based watchdog system for detecting straggler jobs in the render farm and optimizing resource utilization.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Certifications</h2>
-        <p>Machine Learning Engineering Nanodegree (Udacity) | Machine Learning Certification (Coursera)<br>
-        Projects: <a href="https://github.com/vrbala/mlnd">GitHub Portfolio</a></p>
-    </section>
 </body>
 </html>
